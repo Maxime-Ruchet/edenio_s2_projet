@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import IconLogo from '@/components/icons/iconelogo.vue'
 import { RouterLink } from 'vue-router'
-import Iconpanier from '@/components/icons/iconepanier.vue'
+import Iconpanier from '@/components/icons/iconepanier2.vue'
 import Iconnventaire from '@/components/icons/iconeinventaire.vue'
 import Iconpomme from '@/components/icons/iconepomme.vue'
 import Iconmessage from '@/components/icons/iconemessage.vue'
