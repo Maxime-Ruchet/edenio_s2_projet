@@ -10,7 +10,7 @@ import Iconelogo from './icons/iconelogo.vue';
     class="space-y-10 pt-20 max-w-screen-xl m-auto lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0"
   >
     <Iconelogo class="mx-8 lg:col-span-1"></Iconelogo>
-    <nav class="px-5 columns-2 gap-8 space-y-8 lg:columns-3 lg:col-span-3 lg:px-0">
+    <nav class="px-5 columns-2 gap-8 space-y-8 lg:columns-2 lg:col-span-3 lg:px-0">
       <div class="break-inside-avoid space-y-3">
         <h3 class="uppercase text-sm lg:text-base">Infos pratique</h3>
         <ul class="text-gray-400 text-sm lg:text-base">
@@ -45,24 +45,7 @@ import Iconelogo from './icons/iconelogo.vue';
         </ul>
       </div>
 
-      <div class="break-inside-avoid space-y-3">
-        <h3 class="uppercase text-sm lg:text-base">About</h3>
-        <ul class="text-gray-400 text-sm lg:text-base">
-          <li><a href="#">Company</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Investors</a></li>
-        </ul>
-      </div>
-      <div class="break-inside-avoid space-y-3">
-        <h3 class="uppercase text-sm lg:text-base">Resources</h3>
-        <ul class="text-gray-400 text-sm lg:text-base">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Guides</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-      </div>
+
     </nav>
     <div
       class="px-5 text-gray-400 border-t border-gray-300 py-8 space-y-6 text-center lg:col-span-4 lg:flex lg:justify-around lg:items-center lg:space-y-0"
