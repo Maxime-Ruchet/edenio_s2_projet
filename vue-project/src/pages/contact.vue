@@ -1,8 +1,7 @@
+
 <script setup lang="ts">
 </script>
 
 <template>
-  <main>
-
-  </main>
+  <h1>Page contact</h1>
 </template>

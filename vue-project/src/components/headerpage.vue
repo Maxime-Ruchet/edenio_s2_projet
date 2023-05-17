@@ -3,6 +3,14 @@ import { ref } from 'vue'
 import IconLogo from '@/components/icons/iconelogo.vue'
 import { RouterLink } from 'vue-router'
 import Iconpanier from '@/components/icons/iconepanier.vue'
+import Iconnventaire from '@/components/icons/iconeinventaire.vue'
+import Iconpomme from '@/components/icons/iconepomme.vue'
+import Iconmessage from '@/components/icons/iconemessage.vue'
+import Iconbalance from '@/components/icons/iconebalance.vue'
+import Iconcalandar from '@/components/icons/iconecalendar.vue'
+import Iconinterro from '@/components/icons/iconeinterro.vue'
+import Iconlivre from '@/components/icons/iconelivre.vue'
+
 
 const menuIsOpen = ref(false)
 </script>
@@ -29,17 +37,34 @@ const menuIsOpen = ref(false)
       :class="{ '!visible !opacity-100': menuIsOpen }"
     >
       <ul class="flex flex-col gap-4 lg:flex-row">
-        <li>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Nos produits">Nos produit</RouterLink>
+        <li class="flex items-center">
+          <Iconnventaire class="block lg:hidden -ml-2.5"></Iconnventaire>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/nosproduits">Nos produit</RouterLink>
         </li>
-        <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Nos recettes">Nos recettes</RouterLink></li>
-        <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Forums">Forums</RouterLink></li>
-        <li>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Suivi">Suivi</RouterLink>
+        <li class="flex items-center">
+          <Iconpomme class="block lg:hidden -ml-1"></Iconpomme>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Nos recettes">Nos recettes</RouterLink>
         </li>
-        <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Evenement">Evenement</RouterLink></li>
-        <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Contact">Contact</RouterLink></li>
-        <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Glossair">Glossair</RouterLink></li>
+        <li class="flex items-center">
+          <Iconmessage class="block lg:hidden -ml-3"></Iconmessage>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/forums">Forums</RouterLink>
+        </li>
+        <li class="flex items-center">
+          <Iconbalance class="block lg:hidden -ml-1"></Iconbalance>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/suivi">Suivi</RouterLink>
+        </li>
+        <li class="flex items-center">
+          <Iconcalandar class="block lg:hidden -ml-1.5"></Iconcalandar>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/evenement">Evenement</RouterLink>
+        </li>
+        <li class="flex items-center">
+          <Iconinterro class="block lg:hidden -ml-1.5"></Iconinterro>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/contact">Contact</RouterLink>
+        </li>
+        <li class="flex items-center">
+          <Iconlivre class="block lg:hidden -ml-1"></Iconlivre>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/glossaire">Glossair</RouterLink>
+        </li>
       </ul>
       <div class="flex items-center gap-4 px-4 lg:flex-row">
         <button
