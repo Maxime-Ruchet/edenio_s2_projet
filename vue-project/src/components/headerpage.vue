@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import IconLogo from '@/components/icons/iconelogo.vue'
 import { RouterLink } from 'vue-router'
+import Iconpanier from '@/components/icons/iconepanier.vue'
 
 const menuIsOpen = ref(false)
 </script>
@@ -41,6 +42,11 @@ const menuIsOpen = ref(false)
         <li><RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Glossair">Glossair</RouterLink></li>
       </ul>
       <div class="flex items-center gap-4 px-4 lg:flex-row">
+        <button
+          class="flex-1 p-4 text-white lg:flex-none lg:px-6"
+        >
+          <Iconpanier></Iconpanier>
+        </button>
         <button
           class="flex-1 p-4 rounded-lg border-2 border-lime-200 text-lime-500 font-bold lg:flex-none lg:px-6"
         >
