@@ -33,7 +33,7 @@ const menuIsOpen = ref(false)
       ></span>
     </button>
     <nav
-      class="invisible opacity-0 bg-indigo-50 fixed inset-0 mt-20 px-6 py-12 flex flex-col justify-between lg:visible lg:opacity-100 lg:static lg:bg-transparent lg:mt-0 lg:flex-row lg:flex-1"
+      class="invisible opacity-0 bg-white fixed inset-0 mt-20 px-6 py-12 flex flex-col justify-between lg:visible lg:opacity-100 lg:static lg:bg-transparent lg:mt-0 lg:flex-row lg:flex-1"
       :class="{ '!visible !opacity-100': menuIsOpen }"
     >
       <ul class="flex flex-col gap-4 lg:flex-row">
