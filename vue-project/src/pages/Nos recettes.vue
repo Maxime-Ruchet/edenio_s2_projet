@@ -6,7 +6,7 @@ import Iconhorloge from '../components/icons/iconehorloge.vue'
 
 
 <template>
-    <h1 class="text-center">Page nos recettes</h1>
+    <h1 class="text-center">Nos recettes</h1>
     
 <div class="space-y-0 pt-10 max-w-screen-xl ml-9 grid grid-cols-3 gp-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
     <div class="break-inside-avoid space-y-3">
