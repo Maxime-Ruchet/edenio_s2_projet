@@ -27,6 +27,7 @@
   <img src="../public/imageindex4.webp" alt="" class="h-60 w-60 mt-4">
 </div>
 
+<div class="bg-amber-50">
 <h2 class="text-center mt-5">Edenio c’est la solution pour une alimentation saine,  des économies et pour préserver l’environnement.</h2>
 <div class="flex justify-center">
   <img src="../public/imageindex5.webp" alt="" class="h-10 w-10 mt-10">
@@ -48,4 +49,5 @@
   <img src="../public/imageindex8.webp" alt="" class="h-10 w-10 mt-10">
 </div>
 <p class="text-center mt-5">Un goût supérieur pour un prix nettement moins cher </p>
+</div>
 </template>

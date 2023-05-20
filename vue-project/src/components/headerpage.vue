@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed, watch } from 'vue'
 import IconLogo from '@/components/icons/iconelogo.vue'
 import { RouterLink } from 'vue-router'
 import Iconpanier from '@/components/icons/iconepanier2.vue'
@@ -11,11 +11,10 @@ import Iconcalandar from '@/components/icons/iconecalendar.vue'
 import Iconinterro from '@/components/icons/iconeinterro.vue'
 import Iconlivre from '@/components/icons/iconelivre.vue'
 
-
 const menuIsOpen = ref(false)
 </script>
 <template>
-  <header class="flex items-center justify-between px-4 h-20 border-b-2 border-b-indigo-100">
+  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-indigo-100">
     <RouterLink to="/">
       <IconLogo></IconLogo>
     </RouterLink>
