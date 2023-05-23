@@ -1,6 +1,6 @@
 <template>
         <div class="container mx-auto py-8">
-        <h1 class="text-center mb-8">Glossaire</h1>
+        <h1 class="text-center mb-8 text-green">Glossaire</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="bg-white p-4 rounded shadow">
                 <h2 class="font-bold mb-2">Terme 1</h2>

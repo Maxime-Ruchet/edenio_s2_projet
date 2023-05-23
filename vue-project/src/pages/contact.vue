@@ -5,7 +5,7 @@
 <template>
   <div class="flex items-center justify-center bg-gray-100">
         <div class="w-full sm:w-1/2 lg:w-1/3 bg-white p-6 rounded shadow">
-            <h1 class="text-2xl font-bold mb-6">Contactez-nous</h1>
+            <h1 class="text-2xl font-bold mb-6 text-green">Contactez-nous</h1>
             <form action="#" method="POST">
                 <div class="mb-4">
                     <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Nom</label>

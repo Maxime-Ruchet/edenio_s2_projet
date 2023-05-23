@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-center">Évenement</h1>
+    <h1 class="text-center text-green">Évenement</h1>
     <hr class="mt-16">
 <div class="flex items-center">
   <p class="block ml-4">Saint-Nazair : Une operation ramassage a lieu a Saint-Nazair afin de dépolluer la plage</p>

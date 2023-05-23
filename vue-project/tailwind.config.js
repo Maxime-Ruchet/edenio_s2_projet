@@ -16,6 +16,7 @@ module.exports = {
       yellow: '#FFEA28',
       yellow2: '#eab308',
       green2: '#54A32F',
+      yellow3: '#F1F2EA',
       gray: colors.zinc
     },
     fontFamily: {
