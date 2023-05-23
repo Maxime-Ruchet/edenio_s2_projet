@@ -15,7 +15,7 @@ const menuIsOpen = ref(false)
 
 </script>
 <template>
-  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-lime-400"  v-scroll-lock="menuIsOpen">
+  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-green2"  v-scroll-lock="menuIsOpen">
     <RouterLink to="/" @click="menuIsOpen = false">
       <IconLogo></IconLogo>
     </RouterLink>
@@ -73,12 +73,12 @@ const menuIsOpen = ref(false)
           <Iconpanier></Iconpanier>
         </button>
         <button
-          class="flex-1 p-4 rounded-lg border-2 border-lime-200 text-lime-500 font-bold lg:flex-none lg:px-6"
+          class="flex-1 p-4 rounded-lg border-2 border-green text-green font-bold lg:flex-none lg:px-6"
         >
           Connexion
         </button>
         <button
-          class="flex-1 p-4 rounded-lg bg-lime-600 text-white font-bold lg:flex-none lg:px-6"
+          class="flex-1 p-4 rounded-lg bg-green text-white font-bold lg:flex-none lg:px-6"
         >
           Inscription
         </button>

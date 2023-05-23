@@ -7,7 +7,7 @@ import Iconelogo from './icons/iconelogo.vue';
 
 <template>
   <footer
-    class="space-y-10 pt-20 max-w-screen-xl m-auto lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0 border-t-2 border-t-lime-400 mt-8"
+    class="space-y-10 pt-20 max-w-screen-xl m-auto lg:grid lg:grid-cols-4 lg:gap-8 lg:space-y-0 border-t-2 border-t-green2 mt-8"
   >
     <Iconelogo class="mx-8 lg:col-span-1"></Iconelogo>
     <nav class="px-5 columns-2 gap-8 space-y-8 lg:columns-2 lg:col-span-3 lg:px-0">
