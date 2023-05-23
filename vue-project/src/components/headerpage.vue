@@ -12,10 +12,11 @@ import Iconinterro from '@/components/icons/iconeinterro.vue'
 import Iconlivre from '@/components/icons/iconelivre.vue'
 
 const menuIsOpen = ref(false)
+
 </script>
 <template>
-  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-indigo-100">
-    <RouterLink to="/">
+  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-lime-400"  v-scroll-lock="menuIsOpen">
+    <RouterLink to="/" @click="menuIsOpen = false">
       <IconLogo></IconLogo>
     </RouterLink>
     <button
@@ -38,31 +39,31 @@ const menuIsOpen = ref(false)
       <ul class="flex flex-col gap-4 lg:flex-row">
         <li class="flex items-center">
           <Iconnventaire class="block lg:hidden -ml-2.5"></Iconnventaire>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/nosproduits">Nos produit</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/nosproduits">Nos produit</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconpomme class="block lg:hidden -ml-1"></Iconpomme>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/Nos recettes">Nos recettes</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/Nos recettes">Nos recettes</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconmessage class="block lg:hidden -ml-3"></Iconmessage>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/forums">Forums</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/forums">Forums</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconbalance class="block lg:hidden -ml-1"></Iconbalance>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/suivi">Suivi</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/suivi">Suivi</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconcalandar class="block lg:hidden -ml-1.5"></Iconcalandar>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/evenement">Evenement</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/evenement">Evenement</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconinterro class="block lg:hidden -ml-1.5"></Iconinterro>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/contact">Contact</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/contact">Contact</RouterLink>
         </li>
         <li class="flex items-center">
           <Iconlivre class="block lg:hidden -ml-1"></Iconlivre>
-          <RouterLink class="text-gray-500 p-4 block rounded-lg" to="/glossaire">Glossair</RouterLink>
+          <RouterLink class="text-gray-500 p-4 block rounded-lg" @click="menuIsOpen = false" to="/glossaire">Glossair</RouterLink>
         </li>
       </ul>
       <div class="flex items-center gap-4 px-4 lg:flex-row">
