@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-center text-green">Produits</h1>
+    <h1 class="text-center text-green mt-8">Produits</h1>
 
     <div class="space-y-0 pt-10 max-w-screen-xl ml-5 grid grid-cols-2 gp-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0 lg:ml-60">
       <div class="break-inside-avoid space-y-2">

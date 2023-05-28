@@ -20,6 +20,11 @@ const menuIsOpen = ref(false)
       <IconLogo></IconLogo>
     </RouterLink>
     <button
+          class="flex-1 p-4 text-white ml-48 lg:flex-none lg:px-6 sm:hidden"
+        >
+          <Iconpanier></Iconpanier>
+        </button>
+    <button
       class="w-6 h-3 flex flex-col justify-between lg:hidden"
       @pointerdown="menuIsOpen = !menuIsOpen"
     >
@@ -68,7 +73,7 @@ const menuIsOpen = ref(false)
       </ul>
       <div class="flex items-center gap-4 px-4 lg:flex-row">
         <button
-          class="flex-1 p-4 text-white lg:flex-none lg:px-6"
+          class="flex-1 p-4 text-white hidden lg:flex-none lg:px-6 sm:block"
         >
           <Iconpanier></Iconpanier>
         </button>

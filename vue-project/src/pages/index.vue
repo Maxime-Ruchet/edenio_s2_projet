@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -24,7 +25,7 @@
 
 <h2 class="text-center mt-5 text-green">Trouvez des producteurs locaux près de chez vous !</h2>
 <div class="flex justify-center">
-  <img src="../public/imageindex4.webp" alt="" class="h-60 w-60 mt-4">
+  <RouterLink to="/carte"><img src="../public/imageindex4.webp" alt="" class="h-60 w-60 mt-4"></RouterLink>
 </div>
 
 <div class="bg-yellow3">
