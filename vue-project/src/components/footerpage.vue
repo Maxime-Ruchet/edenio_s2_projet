@@ -3,6 +3,7 @@ import IconInstagram from '@/components/icons/iconeinstagram.vue'
 import Icontwitter from '@/components/icons/twitter.vue'
 import Iconfacebook from '@/components/icons/facebook.vue'
 import Iconelogo from './icons/iconelogo.vue';
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -22,7 +23,7 @@ import Iconelogo from './icons/iconelogo.vue';
       <div class="break-inside-avoid space-y-3">
         <h3 class="uppercase text-sm lg:text-base">CGV et confidentialité</h3>
         <ul class="text-gray-400 text-sm lg:text-base">
-          <li><a href="#">Mentions légales</a></li>
+          <RouterLink to="/mention legale">Mentions légales</RouterLink>
           <li><a href="#">Cookies</a></li>
           <li><a href="#">CGV</a></li>
         </ul>
