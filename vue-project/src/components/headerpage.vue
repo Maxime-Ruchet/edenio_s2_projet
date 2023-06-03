@@ -15,7 +15,7 @@ const menuIsOpen = ref(false)
 
 </script>
 <template>
-  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-green2"  v-scroll-lock="menuIsOpen">
+  <header  class="flex items-center justify-between px-4 h-20 border-b-2 border-b-green2 "  v-scroll-lock="menuIsOpen">
     <RouterLink to="/" @click="menuIsOpen = false">
       <IconLogo></IconLogo>
     </RouterLink>
