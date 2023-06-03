@@ -2,7 +2,7 @@
 import IconInstagram from '@/components/icons/iconeinstagram.vue'
 import Icontwitter from '@/components/icons/twitter.vue'
 import Iconfacebook from '@/components/icons/facebook.vue'
-import Iconelogo from './icons/iconelogo.vue';
+import Iconelogo from './icons/iconelogo.vue'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -45,8 +45,6 @@ import { RouterLink } from 'vue-router'
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
-
-
     </nav>
     <div
       class="px-5 text-gray-400 border-t border-gray-300 py-8 space-y-6 text-center lg:col-span-4 lg:flex lg:justify-around lg:items-center lg:space-y-0"
