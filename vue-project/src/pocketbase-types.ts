@@ -1,10 +1,10 @@
 /**
- * This file was @generated using pocketbase-typegen
- */
+* This file was @generated using pocketbase-typegen
+*/
 
 export enum Collections {
-  Evenement = 'evenement',
-  Users = 'users'
+	Evenement = "evenement",
+	Users = "users",
 }
 
 // Alias types for improved usability
@@ -14,32 +14,32 @@ export type HTMLString = string
 
 // System fields
 export type BaseSystemFields<T = never> = {
-  id: RecordIdString
-  created: IsoDateString
-  updated: IsoDateString
-  collectionId: string
-  collectionName: Collections
-  expand?: T
+	id: RecordIdString
+	created: IsoDateString
+	updated: IsoDateString
+	collectionId: string
+	collectionName: Collections
+	expand?: T
 }
 
 export type AuthSystemFields<T = never> = {
-  email: string
-  emailVisibility: boolean
-  username: string
-  verified: boolean
+	email: string
+	emailVisibility: boolean
+	username: string
+	verified: boolean
 } & BaseSystemFields<T>
 
 // Record types for each collection
 
 export type EvenementRecord = {
-  image?: string
-  description?: HTMLString
-  heure?: HTMLString
+	image?: string
+	description?: HTMLString
+	heure?: HTMLString
 }
 
 export type UsersRecord = {
-  name?: string
-  avatar?: string
+	name?: string
+	avatar?: string
 }
 
 // Response types include system fields and match responses from the PocketBase API
@@ -49,11 +49,11 @@ export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
-  evenement: EvenementRecord
-  users: UsersRecord
+	evenement: EvenementRecord
+	users: UsersRecord
 }
 
 export type CollectionResponses = {
-  evenement: EvenementResponse
-  users: UsersResponse
+	evenement: EvenementResponse
+	users: UsersResponse
 }

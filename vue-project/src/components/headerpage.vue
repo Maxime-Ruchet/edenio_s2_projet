@@ -83,7 +83,7 @@ const menuIsOpen = ref(false)
           <RouterLink
             class="text-gray-500 p-4 block rounded-lg"
             @click="menuIsOpen = false"
-            to="/evenement"
+            to="/evenements"
             >Evenement</RouterLink
           >
         </li>
