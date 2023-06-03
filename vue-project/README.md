@@ -1,2 +1,2 @@
 # edenio_s2_projet
-nom prenom : 
+nom prenom : ruchet maxime/alban luc/moulin evan

@@ -10,12 +10,12 @@ const unevenement = await oneID(props.id)
 
 <template>
     <div class="container mx-auto px-4 py-8">
-  <div class="grid grid-cols sm:grid-cols-2 gap-8">
+  <div class="grid grid-cols lg:grid-cols-2 gap-8">
     <div class="bg-white p-4 rounded shadow flex">
-      <img class="m-auto pb-4" :src="urlImg0">
+      <img class="m-auto pb-4 w-24" :src="urlImg0">
         <div>
-  <p v-html=" unevenement.description "></p>
-    <p v-html=" unevenement.heure"></p>
+  <p class="ml-4" v-html=" unevenement.description "></p>
+    <p class="ml-4" v-html=" unevenement.heure"></p>
     </div>
     </div>
     </div>
