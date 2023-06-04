@@ -3,6 +3,7 @@ export const pb = new PocketBase('http://127.0.0.1:8090') ;
 import type { EvenementResponse } from './pocketbase-types';
 import type { GlossaireResponse } from './pocketbase-types';
 import type { ProduitsResponse } from './pocketbase-types';
+import type { RecettesResponse } from './pocketbase-types';
 
 export async function Allevenement() {
   const records = await pb.collection('evenement').getFullList<EvenementResponse>()
@@ -35,3 +36,12 @@ export async function oneIDproduits(id: string) {
   return oneRecord;
 }
 
+export async function Allrecettes() {
+  const records = await pb.collection('recettes').getFullList<RecettesResponse>()
+  return records
+}
+
+export async function oneIDrecettes(id: string) {
+  const oneRecord = await pb.collection('recettes').getOne<RecettesResponse>(id,);
+  return oneRecord;
+}

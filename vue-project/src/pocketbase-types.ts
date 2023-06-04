@@ -6,6 +6,7 @@ export enum Collections {
 	Evenement = "evenement",
 	Glossaire = "glossaire",
 	Produits = "produits",
+	Recettes = "recettes",
 	Users = "users",
 }
 
@@ -50,6 +51,12 @@ export type ProduitsRecord = {
 	prix?: number
 }
 
+export type RecettesRecord = {
+	field?: string
+	titre?: string
+	heure?: string
+}
+
 export type UsersRecord = {
 	name?: string
 	avatar?: string
@@ -59,6 +66,7 @@ export type UsersRecord = {
 export type EvenementResponse = Required<EvenementRecord> & BaseSystemFields
 export type GlossaireResponse = Required<GlossaireRecord> & BaseSystemFields
 export type ProduitsResponse = Required<ProduitsRecord> & BaseSystemFields
+export type RecettesResponse = Required<RecettesRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
@@ -67,6 +75,7 @@ export type CollectionRecords = {
 	evenement: EvenementRecord
 	glossaire: GlossaireRecord
 	produits: ProduitsRecord
+	recettes: RecettesRecord
 	users: UsersRecord
 }
 
@@ -74,5 +83,6 @@ export type CollectionResponses = {
 	evenement: EvenementResponse
 	glossaire: GlossaireResponse
 	produits: ProduitsResponse
+	recettes: RecettesResponse
 	users: UsersResponse
 }
