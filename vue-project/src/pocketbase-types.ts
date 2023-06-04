@@ -5,6 +5,7 @@
 export enum Collections {
 	Evenement = "evenement",
 	Glossaire = "glossaire",
+	Produits = "produits",
 	Users = "users",
 }
 
@@ -43,6 +44,12 @@ export type GlossaireRecord = {
 	description?: HTMLString
 }
 
+export type ProduitsRecord = {
+	image?: string
+	titre?: string
+	prix?: number
+}
+
 export type UsersRecord = {
 	name?: string
 	avatar?: string
@@ -51,6 +58,7 @@ export type UsersRecord = {
 // Response types include system fields and match responses from the PocketBase API
 export type EvenementResponse = Required<EvenementRecord> & BaseSystemFields
 export type GlossaireResponse = Required<GlossaireRecord> & BaseSystemFields
+export type ProduitsResponse = Required<ProduitsRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
@@ -58,11 +66,13 @@ export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 export type CollectionRecords = {
 	evenement: EvenementRecord
 	glossaire: GlossaireRecord
+	produits: ProduitsRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
 	evenement: EvenementResponse
 	glossaire: GlossaireResponse
+	produits: ProduitsResponse
 	users: UsersResponse
 }
