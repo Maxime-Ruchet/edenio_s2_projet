@@ -12,3 +12,4 @@ export async function oneID(id: string) {
     const oneRecord = await pb.collection('evenement').getOne<EvenementResponse>(id,);
     return oneRecord;
 }
+
