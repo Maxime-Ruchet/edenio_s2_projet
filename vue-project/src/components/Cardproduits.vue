@@ -9,12 +9,16 @@ const unproduits = await oneIDproduits(props.id)
 </script>
 
 <template>
-    <div class="container mx-auto px-4 py-8">
-  <div class="grid grid-cols lg:grid-cols-2 gap-8">
-      <img class="m-auto pb-4 w-24" :src="urlImg0">
-  <p class="ml-4" v-html=" unproduits.image "></p>
-    <p class="ml-4" v-html=" unproduits.titre"></p>
-    <p class="ml-4" v-html=" unproduits.prix"></p>
+    <div
+    class="space-y-0 pt-10 max-w-screen-xl ml-5 grid grid-cols-2 gp-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0 lg:ml-60"
+  >
+    <div class="break-inside-avoid space-y-1">
+      <img :src="urlImg0" class="w-20 ml-10" />
+      <p class="ml-10">{{ titre }}</p>
+      <p class="ml-16">{{ prix }}</p>
+      <button class="bg-yellow hover:bg-yellow2 text-white font-bold py-2 px-4 rounded-full">
+        Ajouter au panier
+      </button>
     </div>
     </div>
   </template>
