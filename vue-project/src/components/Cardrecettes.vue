@@ -5,7 +5,7 @@ import {pb} from '@/backend'
 const urlImg0 = props.field ? pb.getFileUrl(props, props.field, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg0)
 import { oneIDrecettes } from '@/backend'
-const unproduits = await oneIDrecettes(props.id)
+const unproduits = oneIDrecettes(props.id)
 import Iconhorloge from '../components/icons/iconehorloge.vue'
 </script>
 

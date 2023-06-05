@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router'
     /></RouterLink>
   </div>
 
-  <div class="bg-yellow3">
+  <div class="bg-yellow3 pb-8">
     <h2 class="text-center mt-5 text-green">
       Edenio c’est la solution pour une alimentation saine, des économies et pour préserver
       l’environnement.
