@@ -5,7 +5,7 @@ import {pb} from '@/backend'
 const urlImg0 = props.image ? pb.getFileUrl(props, props.image, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg0)
 import { oneIDproduits } from '@/backend'
-const unproduits = await oneIDproduits(props.id)
+const unproduits =  oneIDproduits(props.id)
 </script>
 
 <template>
